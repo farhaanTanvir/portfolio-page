@@ -76,6 +76,7 @@ nav ul a:hover {
 
 /* NAVBAR */
 
+
 /* HERO */
 #hero {
     max-width: 100%;
@@ -106,9 +107,9 @@ nav ul a:hover {
 #hero h1 {
     font-family: var(--font1);
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 3.89rem;
     margin-top: 0;
-    line-height: 55px
+    line-height: 60px
 }
 
 i {
@@ -118,6 +119,10 @@ i {
 .bottom-p {
     font-weight: 400;
     font-size: 1rem;
+
+}
+
+button {
     cursor: pointer;
 }
 
@@ -193,6 +198,12 @@ i {
     border: 1px solid rgba(117, 117, 117, 0.342);
     border-radius: 20px;
     background-color: #fffdfd;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s ease !important;
+}
+
+.item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .item .content {
@@ -200,6 +211,7 @@ i {
     font-family: var(--font2);
 
 }
+
 
 .item h2 {
     font-family: var(--font1);
@@ -295,7 +307,6 @@ i {
     border-radius: 5px;
     padding: 10px;
     margin: 0 15px;
-
 }
 
 .prof {
@@ -359,7 +370,7 @@ i {
     color: black;
 }
 
-h2 {
+#contact h2 {
     font-weight: 400;
     font-size: 1.25rem;
 }
@@ -401,3 +412,232 @@ footer .otherone {
 }
 
 /* FOOTER */
+
+
+@media (min-width: 768px) {
+    nav {
+        padding: 0.5rem 2rem;
+    }
+
+    nav .logo {
+        font-size: 2rem;
+
+    }
+
+    nav ul {
+        gap: 3.6rem;
+    }
+
+    nav ul a {
+        font-size: 1.2rem;
+    }
+
+    .hero-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #hero h1 {
+        font-size: 6rem;
+        line-height: 100px
+    }
+
+    .heading-p,
+    .bottom-p {
+        font-size: 1.4rem;
+    }
+
+    .bottom-p {
+        margin-top: -20px
+    }
+
+    .btn-container {
+        flex-direction: row;
+        margin-top: 20px;
+        gap: 20px
+    }
+
+    #hero button {
+        padding: 22px 30px;
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
+    #work {
+        margin: 8rem 0;
+    }
+
+    #work h1 {
+        font-size: 3rem;
+        margin-bottom: 60px
+    }
+
+    .item-container {
+        grid-template-columns: 1fr 1fr;
+        overflow-x: scroll;
+        column-gap: 25px;
+        overflow-y: hidden;
+    }
+
+    .item {
+        min-width: 520px;
+    }
+
+    .item img {
+        height: 300px
+    }
+
+    .item h2 {
+        font-family: var(--font1);
+        margin: 25px 0;
+        font-size: 3rem;
+        padding: 5px 0;
+    }
+
+    .item p {
+        color: rgb(92, 91, 91);
+        font-size: 1.38rem;
+        padding: 5px 0;
+
+    }
+
+    .quality-cont {
+        font-size: 1.1rem;
+    }
+
+    .quality {
+        background-color: var(--bg-alt);
+        padding: 5px 10px;
+        border-radius: 40px;
+        border: 1px solid #8b6f4748;
+    }
+
+    .item a {
+        font-size: 1.5rem;
+        padding: 80px 0;
+    }
+
+    #skills h1 {
+        font-size: 2.8rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .skill {
+        width: 20rem;
+        font-size: 1.15rem;
+    }
+
+    #contact {
+        padding: 3rem 3rem;
+    }
+
+    #contact h1 {
+        font-size: 2.5rem;
+    }
+
+    #contact p {
+        font-size: 1.25rem;
+    }
+
+    #contact h2 {
+        font-size: 1.6rem;
+    }
+
+    .actual-contact a {
+        font-size: 1.5rem;
+    }
+
+    .cont-icon {
+        transform: scale(1.2);
+        margin-right: 5px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 1.5rem 5px 1.5rem;
+    }
+
+    .footerheading {
+        font-size: 1.6rem;
+    }
+
+    footer .otherone {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    nav .logo {
+        margin-left: 20px;
+    }
+
+    .hero-content {
+        margin-left: 12rem;
+    }
+
+    #work {
+        padding: 0 15rem;
+        overflow: hidden;
+    }
+
+    .item h2 {
+        font-size: 2.5rem;
+    }
+
+    .item p {
+        font-size: 1.2rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    #skills {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    #skills h1 {
+        font-size: 3.2rem;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+    #contact {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .contacts {
+        margin-top: 25px;
+    }
+
+    .item-container {
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 1601px) {
+    #work {
+        padding: 0 32rem;
+    }
+
+    #skills,
+    #contact,
+    .hero-content {
+        padding-left: 30rem;
+        padding-right: 30rem;
+    }
+
+}
