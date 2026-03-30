@@ -27,9 +27,13 @@ body {
 
 /* NAVBAR */
 
-nav {
+header {
     position: sticky;
     top: 0;
+}
+
+nav {
+
     z-index: 100;
     display: flex;
     align-items: center;
@@ -70,8 +74,20 @@ nav ul a {
     transition: opacity 0.2s ease;
 }
 
+nav ul a {
+    transition: background 0.2s ease, color 0.2s ease;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+}
+
 nav ul a:hover {
-    opacity: 0.5;
+    background: var(--bg-alt);
+    color: var(--accent);
+}
+
+nav ul a:active {
+    background: var(--bg-alt);
+    color: var(--accent);
 }
 
 /* NAVBAR */
@@ -260,6 +276,15 @@ button {
     text-align: center;
 }
 
+.card-link .arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.card-link:hover .arrow {
+    transform: translateX(4px);
+}
+
 /* WORK */
 
 
@@ -341,13 +366,16 @@ button {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .contacts {
     display: flex;
     gap: 10px;
     align-items: center;
+    text-decoration: none;
+    color: black;
+    width: fit-content
 }
 
 .cont-icon {
@@ -364,10 +392,8 @@ button {
     color: var(--muted);
 }
 
-.actual-contact a {
+.actual-contact {
     font-weight: bold;
-    text-decoration: none;
-    color: black;
 }
 
 #contact h2 {
@@ -378,6 +404,19 @@ button {
 .para {
     color: rgb(97, 97, 97);
     margin: 20px 0;
+}
+
+.contacts {
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts:hover {
+    color: var(--accent);
+    transform: translateX(4px);
 }
 
 /* CONTACT */
