@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio - Farhan T.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
  <header>
+    <div class="offscreen-menu">
+      <div class="crossbtn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></div>
+      <ul>
+        <li class="ham-menu"><a class="ham-item" href="#work">Work</a></li>
+        <li class="ham-reserve"><a class="ham-item" href="#skills">Skills</a></li>
+        <li class="ham-location"><a class="ham-item" href="#contact">Let's Talk</a></li>
+      </ul>
+    </div>
+
     <nav>
         <p class="logo">Farhan T.</p>
          <ul>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a class="talk-btn" href="#contact">Let's Talk</a></li>
+          <li class="noham"><a href="#work">Work</a></li>
+          <li class="noham"><a href="#skills">Skills</a></li>
+          <li class="noham"><a class="talk-btn" href="#contact">Let's Talk</a></li>
+          <li class="ham"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></li>
          </ul>
     </nav>
  </header>
@@ -25,8 +35,8 @@
         <h1>I build <br><i>clean</i> websites <br>for businesses.</h1>
         <p class="bottom-p">I'm Farhan T. — a web developer who turns business goals into fast, responsive, professional websites.</p>
         <div class="btn-container">
-            <button class="btn1">View My Work</button>
-            <button class="btn2">Start a Project</button>
+            <a href="#work"><button class="btn1">View My Work</button></a>
+            <a href="#contact"><button class="btn2">Start a Project</button></a>
         </div>
         </div>
     </section>
