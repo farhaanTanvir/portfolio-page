@@ -4,8 +4,10 @@
     --surface: #ffffff;
     --text: #1c1b18;
     --muted: #7a7670;
-    --accent: #8B6F47;
-    --accent-light: #C4A882;
+    /* --accent: #8B6F47;
+    --accent-light: #C4A882; */
+    --accent: #4a7c59;
+    --accent-light: #7aab8a;
     --border: #e2ddd7;
     --font1: 'Cormorant Garamond', serif;
     --font2: 'DM Sans', sans-serif;
@@ -258,7 +260,7 @@ button {
     background-color: var(--bg-alt);
     padding: 5px 10px;
     border-radius: 40px;
-    border: 1px solid #8b6f4748;
+    border: 1px solid #4a7c59;
 }
 
 .item a {
@@ -616,7 +618,7 @@ footer .otherone {
         background-color: var(--bg-alt);
         padding: 5px 10px;
         border-radius: 40px;
-        border: 1px solid #8b6f4748;
+        border: 1px solid #4a7c59;
     }
 
     .item a {
